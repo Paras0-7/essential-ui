@@ -1,0 +1,65 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  width: 100px;
+  max-width:max-content;
+  word-wrap: break-word;
+  padding: 4px; 
+  font-size: 14px;
+  margin: 2px;
+  color: black;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+  z-index: 1; 
+  background: white;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+  animation: shine-border 1s infinite alternate;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 5s;
+}
+@keyframes shine-border {
+  0% {
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Original border */
+  }
+  100% {
+    border: 1px solid rgba(255, 255, 255, 1); /* Shining border */
+  }
+}
+
+/* Tooltip position above the target element */
+.tooltip.top {
+  bottom: 100%;
+  transform-origin: bottom center;
+}
+
+/* Tooltip position below the target element */
+.tooltip.bottom {
+  top: 100%;
+  transform-origin: top center;
+}
+
+/* Position to the left of the target element (Note: This class seems incomplete; it should probably be ".tooltip.left") */
+.tooltip.left {
+  right: 100%;
+  transform-origin: right center;
+}
+
+/* Tooltip position to the right of the target element */
+.tooltip.right {
+  left: 100%;
+  transform-origin: left center;
+}
+
+/* Tooltip visibility and opacity on hover */
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
