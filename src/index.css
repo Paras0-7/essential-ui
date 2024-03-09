@@ -1,0 +1,12 @@
+input {
+    padding:0.5rem 0.75rem
+}
+
+.icon
+table, th, td {
+    border: 1px solid;
+}
+
+thead>tr>th {
+    padding: 5px;
+}
