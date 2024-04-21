@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input {
+    padding:0.5rem 0.75rem;
+}
+/* 
+
+table, th, td {
+    border: 1px solid;
+} */
+
+thead>tr>th {
+    padding: 5px;
+}
+
+table td {
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.datepicker {
+    /* font: inherit; */
+}
+
+
+.datepicker-container {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid #e8e5e1;
+    box-shadow: 0 2px 10px 0 rgba(20,20,19,0.20);
+    background-color: #fff;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.day {
+    font-weight: 400;
+}
+
+@media (min-width: 768px){
+    .datepicker-container table td {
+        min-width: 44px;
+        height: 44px;
+    }
+}
+
+.selected-date, .date:hover{
+    cursor: pointer;
+    background-color: orangered;
+    border-radius: 50px;
+}
+
