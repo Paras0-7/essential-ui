@@ -1,14 +1,12 @@
 
 import './App.css'
-import EsTooltip from './components/EsTooltip/EsTooltip'
+import EsSuggest from './components/EsAutoSuggest/EsSuggest'
 
 function App() {
  
   return (
      <div className="navigation">
-      <EsTooltip  delayIn="3000" delayOut="2000" position="right" arrow={false}>
-        <button data-tooltip="Some Info" id="fade-bt">I am info</button>
-      </EsTooltip>
+      <EsSuggest/>
     </div>
   )
 }

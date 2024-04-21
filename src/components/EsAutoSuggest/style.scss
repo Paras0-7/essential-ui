@@ -1,0 +1,24 @@
+.autosuggest-container {
+  position: relative;
+  display: inline-block;
+
+  .suggestions {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: 100px;
+
+    li {
+      list-style-type: none;
+      padding: 5px;
+      cursor: pointer;
+
+      .highlighted-char {
+        background-color: yellow; // Highlighted character color
+      }
+    }
+  }
+}
