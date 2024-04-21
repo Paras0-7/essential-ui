@@ -1,15 +1,12 @@
 
-import React from 'react'
-import './App.css'
-import EsTooltip from './components/EsTooltip/EsTooltip'
+import React from 'react';
+import './App.css';
 
 function App() {
 
- 
-
- 
   return (
     <div>
+      <p>Essential UI</p>
     </div>
   )
 }
